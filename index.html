@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Thought Parallels — Architecture & Design Practice</title>
+  <meta name="description" content="Thought Parallels is an award-winning interdisciplinary architectural and design practice based in Calicut, Kerala, specializing in sustainable tropical and contemporary architecture.">
+  <meta name="keywords" content="Thought Parallels, architecture, Kerala architects, Nikhil Mohan, Shabna Nikhil, tropical architecture, The Skew House, Reflections">
+  <meta name="author" content="Thought Parallels">
+  
+  <!-- Preload critical hero image for instant LCP -->
+  <link rel="preload" as="image" href="assets/images/hero-ai-4k.webp" type="image/webp" fetchpriority="high">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thought Parallels Architecture">
+  <meta property="og:description" content="Interdisciplinary architectural practice crafting contextual, sustainable, and contemporary living spaces.">
+  <meta property="og:image" content="assets/images/hero-ai-4k.jpg">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Google Fonts: Cinzel & Inter for Luxury Architectural Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArchitecturalFirm",
+    "name": "Thought Parallels",
+    "url": "https://www.thoughtparallels.com",
+    "logo": "https://www.thoughtparallels.com/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Varakkal Beach Rd, West Hill, Near Bliss Park",
+      "addressLocality": "Kozhikode",
+      "addressRegion": "Kerala",
+      "postalCode": "673005",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918138902899",
+    "email": "mail@thoughtparallels.com"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ================= Site Header ================= -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#top" class="site-logo" aria-label="Thought Parallels Home">
+        thought parallels<span class="logo-sup">®</span>
+      </a>
+
+      <!-- Desktop Navigation with Vertical Dividers -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#top" class="nav-link active">HOME</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="projects.html" class="nav-link">PROJECT</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Open Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <span class="site-logo">thought parallels<span class="logo-sup">®</span></span>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#top" class="drawer-link active">HOME</a>
+      <a href="#about" class="drawer-link">ABOUT</a>
+      <a href="projects.html" class="drawer-link">PROJECT</a>
+      <a href="services.html" class="drawer-link">SERVICES</a>
+      <a href="contact.html" class="drawer-link">CONTACT US</a>
+      <button class="inquiry-btn trigger-inquiry" style="margin-top: 1rem;">GET IN TOUCH</button>
+    </nav>
+  </aside>
+
+  <!-- ================= Main Content ================= -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-image-wrap" data-gallery-target="hero" role="button" tabindex="0" aria-label="View interior architectural photography">
+        <picture>
+          <source type="image/webp" srcset="assets/images/hero-ai-4k.webp">
+          <img 
+            src="assets/images/hero-ai-4k.jpg" 
+            alt="Thought Parallels Architectural Interior with Sunlit Wooden Staircase and Garden View in 4K Resolution" 
+            class="hero-img"
+            width="3840" 
+            height="2143"
+            fetchpriority="high"
+            decoding="async">
+        </picture>
+
+        <!-- Exact Luxury Glassmorphic Hero Panel from Design Mockup -->
+        <div class="hero-curated-panel">
+          
+          <!-- Top Pill Badge -->
+          <div class="hero-curated-badge">
+            <span class="badge-gold-dot"></span>
+            <span>CORE PHILOSOPHY</span>
+          </div>
+
+          <!-- Main Architectural Title -->
+          <h1 class="hero-curated-title">
+            <span class="title-serif">WHITE TRIAD</span>
+            <span class="title-sans">ARCHITECTS</span>
+          </h1>
+
+          <!-- Tagline with Terminal Dash -->
+          <div class="hero-curated-tagline">
+            <span>Live Connect . Live Vision . A Space to Live</span>
+            <span class="tagline-dash" aria-hidden="true"></span>
+          </div>
+
+          <!-- 3 Interactive Glassmorphic Feature Cards with Gold Glowing Borders -->
+          <div class="hero-pillar-cards-wrap">
+            
+            <!-- Card 1: BEYOND ARCHITECTURE -->
+            <a href="#about" class="hero-pillar-glass-card" aria-label="Learn about Beyond Architecture philosophy">
+              <div class="pillar-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="5" height="10" rx="0.5"></rect>
+                  <rect x="9.5" y="4" width="5" height="17" rx="0.5"></rect>
+                  <rect x="16" y="8" width="5" height="13" rx="0.5"></rect>
+                </svg>
+              </div>
+              <div class="pillar-card-text">
+                <h3 class="pillar-card-title">BEYOND ARCHITECTURE</h3>
+                <p class="pillar-card-desc">Designing spaces that inspire, with a perfect balance of functionality and beauty.</p>
+              </div>
+              <div class="pillar-card-arrow" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Card 2: PREMIUM QUALITY -->
+            <a href="#about" class="hero-pillar-glass-card" aria-label="Learn about Premium Quality standards">
+              <div class="pillar-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6z"></path>
+                  <path d="M2 9h20"></path>
+                  <path d="M10 3l-2 6 4 12 4-12-2-6"></path>
+                </svg>
+              </div>
+              <div class="pillar-card-text">
+                <h3 class="pillar-card-title">PREMIUM QUALITY</h3>
+                <p class="pillar-card-desc">Crafted with precision and passion for lasting elegance.</p>
+              </div>
+              <div class="pillar-card-arrow" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Card 3: COMFORT LIVING -->
+            <a href="#about" class="hero-pillar-glass-card" aria-label="Learn about Comfort Living">
+              <div class="pillar-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z"></path>
+                  <path d="M9 21v-7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7"></path>
+                </svg>
+              </div>
+              <div class="pillar-card-text">
+                <h3 class="pillar-card-title">COMFORT LIVING</h3>
+                <p class="pillar-card-desc">Spaces designed for modern life, where comfort meets sophistication.</p>
+              </div>
+              <div class="pillar-card-arrow" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Bottom Action Row: Explore Our Work & Architecture Beyond Limits -->
+          <div class="hero-curated-bottom">
+            <a href="projects.html" class="hero-explore-pill-btn">
+              <span>Explore Our Work</span>
+              <span class="explore-circle-arrow" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+            <span class="hero-curated-divider" aria-hidden="true"></span>
+            <span class="hero-curated-slogan">Architecture Beyond Limits</span>
+          </div>
+
+        </div>
+
+        <!-- Scroll Down Vertical Indicator on Right -->
+        <div class="hero-scroll-indicator">
+          <span class="scroll-vertical-text">Scroll | Down</span>
+          <a href="#about" class="scroll-circle-btn" aria-label="Scroll to About section">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+              <polyline points="18 14 12 20 6 14"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-overlay-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <polyline points="9 21 3 21 3 15"></polyline>
+            <line x1="21" y1="3" x2="14" y2="10"></line>
+            <line x1="3" y1="21" x2="10" y2="14"></line>
+          </svg>
+          View Interior
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About Section: White Triad Architects ================= -->
+    <section class="about-section" id="about">
+      <div class="about-ambient-glow" aria-hidden="true"></div>
+
+      <div class="about-container">
+        
+        <!-- Two-Column Showcase Grid -->
+        <div class="about-main-grid">
+          
+          <!-- Left Column: Studio Portrait in Glass Frame -->
+          <div class="about-visual-column">
+            <div class="about-image-card">
+              <picture>
+                <source type="image/webp" srcset="assets/images/about-principals.webp 1x, assets/images/about-principals-2x.webp 2x">
+                <img 
+                  src="assets/images/about-principals.jpg" 
+                  alt="White Triad Architects Leadership - Principal Architects at Design Studio" 
+                  class="about-portrait-img"
+                  width="1024" 
+                  height="770"
+                  loading="lazy"
+                  decoding="async">
+              </picture>
+              <div class="about-image-glass-badge">
+                <span class="badge-dot"></span>
+                <span>Studio Leadership &bull; Principal Architects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative in Glassmorphism Card -->
+          <div class="about-content-column">
+            <div class="about-glass-card">
+              <span class="about-eyebrow">About The Practice</span>
+              <h2 class="about-title">WHITE TRIAD ARCHITECTS</h2>
+              <p class="about-tagline">Three Elements. One Vision. A Space to Live.</p>
+
+              <div class="about-narrative">
+                <p>The name White Triad represents our belief in three essential pillars: <strong>Transparency</strong>, <strong>Reliability</strong>, and <strong>Comfort</strong>.</p>
+                <p>Like the three sides of a triangle working together to create a strong and balanced form, we bring clients, designers, and vendors together through trust, clear communication, and collaboration.</p>
+                <p>We believe architecture and interior design are not just about creating spaces, but about shaping comfortable environments that reflect people's lifestyles and aspirations.</p>
+                <p>Our approach combines unique design thinking, efficient planning, and professional commitment to deliver spaces with purpose and lasting value.</p>
+              </div>
+
+              <div class="about-statement-glass">
+                <p>&ldquo;At White Triad Architects, we build more than spaces &mdash; we build relationships founded on trust.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Featured Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        
+        <div class="section-title-wrap">
+          <h2 class="section-title">Our Featured Projects</h2>
+        </div>
+
+        <!-- Project Cards Grid from Portfolio (2-Column Architecture Layout) -->
+        <div class="portfolio-grid portfolio-grid-2col" style="padding: 0;">
+          <!-- Card 1: Reflections -->
+          <article class="portfolio-card" data-gallery-target="p-reflections" role="button" tabindex="0" aria-label="View Reflections project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/reflections.webp">
+                <img src="assets/images/projects/reflections.jpg" alt="Reflections" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">Reflections</h3>
+          </article>
+
+          <!-- Card 2: Ochre -->
+          <article class="portfolio-card" data-gallery-target="p-ochre" role="button" tabindex="0" aria-label="View Ochre project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/ochre.webp">
+                <img src="assets/images/projects/ochre.jpg" alt="Ochre" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">Ochre</h3>
+          </article>
+
+          <!-- Card 3: Traditional Affinity -->
+          <article class="portfolio-card" data-gallery-target="p-traditional-affinity" role="button" tabindex="0" aria-label="View Traditional Affinity project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/traditional-affinity.webp">
+                <img src="assets/images/projects/traditional-affinity.jpg" alt="Traditional Affinity" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">Traditional Affinity</h3>
+          </article>
+
+          <!-- Card 4: The Skew House -->
+          <article class="portfolio-card" data-gallery-target="p-skew-house" role="button" tabindex="0" aria-label="View The Skew House project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/skew-house.webp">
+                <img src="assets/images/projects/skew-house.jpg" alt="The Skew House" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">The Skew House</h3>
+          </article>
+
+          <!-- Card 5: Ananda -->
+          <article class="portfolio-card" data-gallery-target="p-ananda" role="button" tabindex="0" aria-label="View Ananda project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/ananda.webp">
+                <img src="assets/images/projects/ananda.jpg" alt="Ananda" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">Ananda</h3>
+          </article>
+
+          <!-- Card 6: Sarvasv -->
+          <article class="portfolio-card" data-gallery-target="p-sarvasv" role="button" tabindex="0" aria-label="View Sarvasv project">
+            <div class="portfolio-card-media">
+              <picture>
+                <source type="image/webp" srcset="assets/images/projects/sarvasv.webp">
+                <img src="assets/images/projects/sarvasv.jpg" alt="Sarvasv" class="portfolio-card-img" width="800" height="550" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <h3 class="portfolio-card-title">Sarvasv</h3>
+          </article>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="projects.html" class="inquiry-btn" style="display: inline-block; width: auto; padding: 0.75rem 2.5rem; font-size: 0.75rem; letter-spacing: 0.14em; text-decoration: none;">View All Projects (20) &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Stay In Touch Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        
+        <div class="section-title-wrap">
+          <h2 class="section-title">Stay In Touch</h2>
+        </div>
+
+        <div class="contact-frame">
+          <!-- Background Studio Photo -->
+          <picture>
+            <source type="image/webp" srcset="assets/images/contact-studio-lounge.webp">
+            <source type="image/jpeg" srcset="assets/images/contact-studio-lounge.jpg">
+            <img 
+              src="assets/images/contact-studio-lounge.jpg" 
+              alt="White Triad & Thought Parallels Architectural Studio Lounge" 
+              class="contact-bg-img"
+              width="1376" 
+              height="768"
+              loading="lazy"
+              decoding="async">
+          </picture>
+
+          <!-- Floating Contact Information Card -->
+          <div class="contact-overlay-card">
+            <h3 class="contact-card-title">THOUGHT PARALLELS</h3>
+            <p class="contact-card-subtitle">architecture</p>
+
+            <!-- Address Block 1 -->
+            <div class="contact-block">
+              <p>Varakkal Beach Rd, West Hill, Near Bliss Park, Kozhikode,</p>
+              <p>Kerala 673005. <span class="gst-num">GST No: 32AFKPN9956K1ZR</span></p>
+              <p>
+                <a href="mailto:mail@thoughtparallels.com" class="contact-link">mail@thoughtparallels.com</a>
+                <button class="copy-btn" data-copy="mail@thoughtparallels.com" title="Copy email address" aria-label="Copy email">copy</button>
+              </p>
+            </div>
+
+            <!-- Phone Block 1 -->
+            <div class="contact-block">
+              <span class="contact-label">Sales/Enquiries and Appointment</span>
+              <p>
+                <a href="tel:+918138902899" class="contact-link">+91 8138 902899</a>
+                <button class="copy-btn" data-copy="+918138902899" title="Copy phone number" aria-label="Copy phone number">copy</button>
+              </p>
+            </div>
+
+            <!-- Phone Block 2 -->
+            <div class="contact-block">
+              <span class="contact-label">Creative Director</span>
+              <p>
+                <a href="tel:+919400482899" class="contact-link">+91 9400 482899</a>
+                <button class="copy-btn" data-copy="+919400482899" title="Copy phone number" aria-label="Copy phone number">copy</button>
+              </p>
+            </div>
+
+            <!-- Interior Entity Block -->
+            <div class="contact-block">
+              <span class="contact-label">Thought Parallels Interiors LLP</span>
+              <p>Varakkal Beach Rd, West Hill,</p>
+              <p>Near Bliss Park, Kozhikode,</p>
+              <p>Kerala 673005</p>
+              <p class="gst-num">GST No: 32AAWFT1261A1ZF</p>
+            </div>
+
+            <!-- Social Links & Consultation Button -->
+            <div class="card-social-row">
+              <a href="https://www.facebook.com/thoughtparallels" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7v-3h3V9.5C10 6.46 11.82 5 14.5 5c1.28 0 2.4.1 2.7.14v3.13h-1.85c-1.48 0-1.75.7-1.75 1.73V12h3.5l-.5 3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/thoughtparallels" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/thought-parallels" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.38 9.74v-8.37H5.08v8.37h2.76z"/></svg>
+              </a>
+            </div>
+
+            <button class="inquiry-btn trigger-inquiry">Send Inquiry</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Site Footer ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span class="footer-copy">Copyright &copy; 2024 Thought Parallels. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#top">Top</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= Lightbox Modal ================= -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Project Lightbox">
+    <button class="lightbox-close" aria-label="Close Lightbox">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    
+    <div class="lightbox-content">
+      <div class="lightbox-media">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      </div>
+      <div class="lightbox-info">
+        <div>
+          <h4 class="lightbox-title" id="lightbox-title"></h4>
+          <p class="lightbox-desc" id="lightbox-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Client Inquiry Modal ================= -->
+  <div class="modal-overlay" id="inquiry-modal" role="dialog" aria-modal="true" aria-label="Send Inquiry Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <h3 class="modal-title">Studio Inquiry</h3>
+        <p class="modal-subtitle">Share your architectural or interior design vision with us.</p>
+      </div>
+
+      <form class="modal-form" id="inquiry-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" class="form-input" placeholder="e.g. Nikhil Patel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-input" placeholder="name@domain.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone / WhatsApp</label>
+          <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label for="project-type" class="form-label">Project Type</label>
+          <input type="text" id="project-type" class="form-input" placeholder="Residential Villa / Commercial / Interior">
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Project Overview</label>
+          <textarea id="message" class="form-textarea" placeholder="Tell us about the site location, timeline, and requirements..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">Send Message to Studio</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Deferred fast JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>

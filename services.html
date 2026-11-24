@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Services — White Triad Architects & Interior Design</title>
+  <meta name="description" content="Explore White Triad Architects' holistic residential interior solutions — from modular kitchens and luxury wardrobes to complete bespoke home transformations.">
+  <meta name="keywords" content="White Triad Architects, home interior services, modular kitchen, luxury wardrobes, false ceiling, architectural lighting, Kerala interior design">
+  <meta name="author" content="White Triad Architects">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our End-to-End Home Interior Services — White Triad Architects">
+  <meta property="og:description" content="Holistic residential solutions: from bespoke modular kitchens to complete home interior transformations.">
+  <meta property="og:image" content="assets/images/hero-ai-4k.jpg">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Google Fonts: Cinzel & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="services-page-body">
+
+  <!-- ================= Site Header ================= -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="index.html" class="site-logo" aria-label="White Triad Architects Home">
+        thought parallels<span class="logo-sup">®</span>
+      </a>
+
+      <!-- Desktop Navigation with Vertical Dividers -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">HOME</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="index.html#about" class="nav-link">ABOUT</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="projects.html" class="nav-link">PROJECT</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="services.html" class="nav-link active">SERVICES</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Open Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <span class="site-logo">thought parallels<span class="logo-sup">®</span></span>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">HOME</a>
+      <a href="index.html#about" class="drawer-link">ABOUT</a>
+      <a href="projects.html" class="drawer-link">PROJECT</a>
+      <a href="services.html" class="drawer-link active">SERVICES</a>
+      <a href="contact.html" class="drawer-link">CONTACT US</a>
+      <button class="inquiry-btn trigger-inquiry" style="margin-top: 1rem;">GET IN TOUCH</button>
+    </nav>
+  </aside>
+
+  <!-- ================= Services Page Hero Header ================= -->
+  <main class="services-main-content">
+    
+    <header class="services-hero-header">
+      <div class="services-hero-ambient" aria-hidden="true"></div>
+      <div class="services-header-container">
+        <span class="services-hero-eyebrow">HOLISTIC RESIDENTIAL SOLUTIONS</span>
+        <h1 class="services-hero-title">Our End-to-End Home Interior <span class="title-accent-italic">Services</span></h1>
+        <p class="services-hero-subtitle">From bespoke modular kitchens to complete home interior transformations crafted by White Triad Architects.</p>
+        
+        <!-- Interactive Category Filter Bar -->
+        <div class="services-filter-bar" role="tablist" aria-label="Filter Services by Category">
+          <button class="service-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Solutions <span class="filter-count">15</span>
+          </button>
+          <button class="service-filter-btn" data-filter="living" role="tab" aria-selected="false">
+            Living &amp; Dining <span class="filter-count">5</span>
+          </button>
+          <button class="service-filter-btn" data-filter="bedrooms" role="tab" aria-selected="false">
+            Bedrooms &amp; Storage <span class="filter-count">3</span>
+          </button>
+          <button class="service-filter-btn" data-filter="kitchen" role="tab" aria-selected="false">
+            Kitchen &amp; Bath <span class="filter-count">2</span>
+          </button>
+          <button class="service-filter-btn" data-filter="finishes" role="tab" aria-selected="false">
+            Ceilings &amp; Finishes <span class="filter-count">5</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= 15 Services Grid ================= -->
+    <section class="services-grid-section">
+      <div class="services-container">
+        
+        <div class="services-grid" id="services-grid">
+
+          <!-- 01: Modular Kitchen -->
+          <article class="service-card" data-category="kitchen" data-service-id="modular-kitchen">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Modular Kitchen Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 14h36v28H6z"></path>
+                <path d="M6 24h36"></path>
+                <path d="M24 24v18"></path>
+                <circle cx="15" cy="33" r="2"></circle>
+                <circle cx="33" cy="33" r="2"></circle>
+                <path d="M14 6v8"></path>
+                <path d="M24 6v8"></path>
+                <path d="M34 6v8"></path>
+                <path d="M10 6h28"></path>
+                <circle cx="15" cy="19" r="1.5"></circle>
+                <circle cx="24" cy="19" r="1.5"></circle>
+                <circle cx="33" cy="19" r="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Modular Kitchen</h3>
+            <p class="service-card-brief">Ergonomic work triangles, waterproof HDHMR cabinetry, German soft-close fittings, and quartz stone countertops.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Kitchen &amp; Utility</span>
+              <button class="service-explore-btn" aria-label="Explore Modular Kitchen details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 02: Storage and Wardrobe -->
+          <article class="service-card" data-category="bedrooms" data-service-id="storage-wardrobe">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Wardrobe & Storage Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="6" width="20" height="36" rx="1"></rect>
+                <line x1="18" y1="6" x2="18" y2="42"></line>
+                <circle cx="15" cy="24" r="1.5"></circle>
+                <circle cx="21" cy="24" r="1.5"></circle>
+                <rect x="30" y="16" width="12" height="12" rx="1"></rect>
+                <rect x="30" y="30" width="12" height="12" rx="1"></rect>
+                <circle cx="36" cy="22" r="1.5"></circle>
+                <circle cx="36" cy="36" r="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Storage and Wardrobe</h3>
+            <p class="service-card-brief">Floor-to-ceiling sliding wardrobes, walk-in closets, tinted fluted glass shutters, and integrated LED shelf illumination.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Bedrooms</span>
+              <button class="service-explore-btn" aria-label="Explore Storage and Wardrobe details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 03: Crockery Unit -->
+          <article class="service-card" data-category="living" data-service-id="crockery-unit">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Crockery Display Cabinet Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="6" width="32" height="36" rx="1"></rect>
+                <line x1="8" y1="26" x2="40" y2="26"></line>
+                <line x1="24" y1="6" x2="24" y2="42"></line>
+                <path d="M14 16h4"></path>
+                <path d="M30 16h4"></path>
+                <rect x="12" y="30" width="8" height="8" rx="0.5"></rect>
+                <rect x="28" y="30" width="8" height="8" rx="0.5"></rect>
+                <circle cx="21" cy="18" r="1"></circle>
+                <circle cx="27" cy="18" r="1"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Crockery Unit</h3>
+            <p class="service-card-brief">Bespoke dining consoles with acoustic fluted glass, back-illuminated bottle racks, and velvet-lined cutlery drawers.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Living &amp; Dining</span>
+              <button class="service-explore-btn" aria-label="Explore Crockery Unit details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 04: Space Saving Furniture -->
+          <article class="service-card" data-category="living" data-service-id="space-saving-furniture">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Space Saving Furniture Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="24" y="6" width="16" height="36" rx="1"></rect>
+                <path d="M8 24h16v14H8z"></path>
+                <path d="M10 24v-8a4 4 0 0 1 8 0v8"></path>
+                <path d="M6 30h4v8H6z"></path>
+                <circle cx="32" cy="14" r="2"></circle>
+                <line x1="24" y1="26" x2="40" y2="26"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Space Saving Furniture</h3>
+            <p class="service-card-brief">Transformable wall beds, fold-away dining counters, and modular hydraulic storage ottomans engineered for modern apartments.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Multipurpose</span>
+              <button class="service-explore-btn" aria-label="Explore Space Saving Furniture details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 05: TV Unit -->
+          <article class="service-card" data-category="living" data-service-id="tv-unit">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- TV Unit Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="10" width="24" height="18" rx="1"></rect>
+                <rect x="10" y="32" width="28" height="8" rx="1"></rect>
+                <line x1="24" y1="28" x2="24" y2="32"></line>
+                <rect x="6" y="12" width="4" height="24" rx="0.5"></rect>
+                <rect x="38" y="12" width="4" height="24" rx="0.5"></rect>
+                <circle cx="18" cy="36" r="1.5"></circle>
+                <circle cx="30" cy="36" r="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">TV Unit</h3>
+            <p class="service-card-brief">Architectural media walls featuring fluted teak louvers, Italian marble backsplashes, acoustic baffles, and concealed cable passages.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Living &amp; Media</span>
+              <button class="service-explore-btn" aria-label="Explore TV Unit details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 06: Study Table -->
+          <article class="service-card" data-category="bedrooms" data-service-id="study-table">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Study Table & Workstation Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="24" width="36" height="4" rx="0.5"></rect>
+                <line x1="10" y1="28" x2="10" y2="42"></line>
+                <line x1="38" y1="28" x2="38" y2="42"></line>
+                <rect x="12" y="14" width="14" height="10" rx="1"></rect>
+                <path d="M32 10l-4 6 5 2"></path>
+                <circle cx="35" cy="10" r="2.5"></circle>
+                <path d="M20 34h8"></path>
+                <line x1="24" y1="34" x2="24" y2="42"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Study Table</h3>
+            <p class="service-card-brief">Ergonomic work-from-home pods with hidden cable conduits, acoustic felt pinboards, floating bookshelves, and glare-free task lighting.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Home Office</span>
+              <button class="service-explore-btn" aria-label="Explore Study Table details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 07: False Ceiling -->
+          <article class="service-card" data-category="finishes" data-service-id="false-ceiling">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- False Ceiling Architectural Cove Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 14l18-8 18 8v6l-18-6-18 6v-6z"></path>
+                <line x1="24" y1="18" x2="24" y2="28"></line>
+                <circle cx="24" cy="32" r="4"></circle>
+                <line x1="16" y1="32" x2="12" y2="32"></line>
+                <line x1="32" y1="32" x2="36" y2="32"></line>
+                <line x1="18" y1="26" x2="15" y2="23"></line>
+                <line x1="30" y1="26" x2="33" y2="23"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">False Ceiling</h3>
+            <p class="service-card-brief">Minimalist gypsum coves, perimeter LED drop-lighting, solid timber baffle accents, and seamless central AC duct integration.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Ceilings &amp; Ambience</span>
+              <button class="service-explore-btn" aria-label="Explore False Ceiling details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 08: Lights -->
+          <article class="service-card" data-category="finishes" data-service-id="lights">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Architectural Wall Sconce & Lights Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 10v20"></path>
+                <path d="M12 18h10l6 8h12l-6-8"></path>
+                <path d="M22 26l-6 10h18l-6-10z"></path>
+                <circle cx="25" cy="40" r="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Lights</h3>
+            <p class="service-card-brief">Layered architectural lighting schemes — magnetic track systems, anti-glare recessed COBs, and custom brass statement pendants.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Lighting Design</span>
+              <button class="service-explore-btn" aria-label="Explore Lights details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 09: Wallpaper -->
+          <article class="service-card" data-category="finishes" data-service-id="wallpaper">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Wallpaper Roll & Pattern Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="18" y="8" width="22" height="28" rx="1"></rect>
+                <path d="M8 32a6 6 0 0 0 12 0V10a4 4 0 0 0-8 0v24a2 2 0 0 0 4 0"></path>
+                <path d="M25 15h.01M33 15h.01M29 20h.01M25 25h.01M33 25h.01"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Wallpaper</h3>
+            <p class="service-card-brief">Handcrafted metallic leaf textures, bespoke botanical murals, organic linen textiles, and acoustic high-durability wallcoverings.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Wall Textures</span>
+              <button class="service-explore-btn" aria-label="Explore Wallpaper details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 10: Paints -->
+          <article class="service-card" data-category="finishes" data-service-id="paints">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Paint Roller & Finishes Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="8" width="28" height="12" rx="2"></rect>
+                <path d="M24 20v8a4 4 0 0 1-4 4h-4v10"></path>
+                <line x1="38" y1="14" x2="42" y2="14"></line>
+                <line x1="42" y1="14" x2="42" y2="28"></line>
+                <line x1="42" y1="28" x2="24" y2="28"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Paints</h3>
+            <p class="service-card-brief">Zero-VOC eco emulsions, Italian limewash textures, microcement coatings, and durable velvet-matte architectural wall paints.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Finishes</span>
+              <button class="service-explore-btn" aria-label="Explore Paints details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 11: Bathroom -->
+          <article class="service-card" data-category="kitchen" data-service-id="bathroom">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Bathroom Bathtub & Shower Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 24h32v8a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8v-8z"></path>
+                <path d="M12 24v-14a4 4 0 0 1 8 0v2"></path>
+                <circle cx="20" cy="14" r="1.5"></circle>
+                <line x1="12" y1="40" x2="10" y2="44"></line>
+                <line x1="36" y1="40" x2="38" y2="44"></line>
+                <path d="M24 16h4"></path>
+                <path d="M22 20h8"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Bathroom</h3>
+            <p class="service-card-brief">Dry and wet zoning, walk-in fluted glass shower partitions, concealed wall-hung fixtures, and customized monolithic stone vanities.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Bath &amp; Spa</span>
+              <button class="service-explore-btn" aria-label="Explore Bathroom details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 12: Pooja Unit -->
+          <article class="service-card" data-category="living" data-service-id="pooja-unit">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Sacred Pooja Mandir Alcove Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="14" width="28" height="28" rx="1"></rect>
+                <path d="M10 14L24 6l14 8"></path>
+                <line x1="24" y1="14" x2="24" y2="42"></line>
+                <circle cx="17" cy="24" r="1.5"></circle>
+                <circle cx="31" cy="24" r="1.5"></circle>
+                <circle cx="17" cy="32" r="1.5"></circle>
+                <circle cx="31" cy="32" r="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Pooja Unit</h3>
+            <p class="service-card-brief">Sacred sanctuary alcoves crafted with brass bell inlays, CNC precision jali panels, backlit Corian motifs, and concealed oil storage.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Sacred Spaces</span>
+              <button class="service-explore-btn" aria-label="Explore Pooja Unit details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 13: Foyer -->
+          <article class="service-card" data-category="living" data-service-id="foyer">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Entry Foyer Console Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="10" width="12" height="16" rx="1"></rect>
+                <rect x="8" y="28" width="16" height="14" rx="1"></rect>
+                <line x1="32" y1="8" x2="32" y2="42"></line>
+                <path d="M28 14l4 4 4-4"></path>
+                <path d="M28 22l4 4 4-4"></path>
+                <circle cx="32" cy="8" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Foyer</h3>
+            <p class="service-card-brief">Impressive arrival statements featuring suspended shoe credenzas, key drop alcoves, ambient floor washes, and full-length bronze mirrors.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Entryway</span>
+              <button class="service-explore-btn" aria-label="Explore Foyer details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 14: Movable Furniture -->
+          <article class="service-card" data-category="living" data-service-id="movable-furniture">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Curated Designer Armchair & Sofa Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="14" width="24" height="22" rx="2"></rect>
+                <rect x="8" y="20" width="6" height="16" rx="1"></rect>
+                <rect x="34" y="20" width="6" height="16" rx="1"></rect>
+                <line x1="14" y1="38" x2="12" y2="42"></line>
+                <line x1="34" y1="38" x2="36" y2="42"></line>
+                <line x1="16" y1="28" x2="32" y2="28"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Movable Furniture</h3>
+            <p class="service-card-brief">Handcrafted teakwood dining sets, accent armchairs, marble-top nested coffee tables, and bespoke upholstery tailored to interior palettes.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Living Comfort</span>
+              <button class="service-explore-btn" aria-label="Explore Movable Furniture details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 15: Kids Bedroom -->
+          <article class="service-card" data-category="bedrooms" data-service-id="kids-bedroom">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <!-- Kids Bunk Bed & Adventure Bedroom Icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="8" y1="6" x2="8" y2="42"></line>
+                <line x1="40" y1="6" x2="40" y2="42"></line>
+                <rect x="8" y="14" width="32" height="6" rx="1"></rect>
+                <rect x="8" y="28" width="32" height="6" rx="1"></rect>
+                <line x1="32" y1="14" x2="32" y2="34"></line>
+                <line x1="36" y1="14" x2="36" y2="34"></line>
+                <circle cx="14" cy="11" r="2"></circle>
+                <circle cx="14" cy="25" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Kids Bedroom</h3>
+            <p class="service-card-brief">Playful, growth-adaptive bunk suites with integrated pull-out trundles, soft-radius safety corners, study nooks, and toy storage organizers.</p>
+            <div class="service-card-footer">
+              <span class="service-cat-pill">Children's Rooms</span>
+              <button class="service-explore-btn" aria-label="Explore Kids Bedroom details">
+                <span>View Details</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Interactive Service Detail Modal / Drawer ================= -->
+    <div class="service-detail-modal" id="service-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="service-modal-backdrop" aria-hidden="true"></div>
+      <div class="service-modal-card">
+        <button class="service-modal-close" aria-label="Close Service Details">&times;</button>
+        
+        <div class="service-modal-header">
+          <div class="modal-icon-badge" id="modal-service-icon"></div>
+          <div>
+            <span class="modal-service-tag" id="modal-service-category">Holistic Solution</span>
+            <h2 class="modal-service-title" id="modal-service-name">Service Title</h2>
+          </div>
+        </div>
+
+        <div class="service-modal-body">
+          <p class="modal-service-overview" id="modal-service-desc">Detailed service description and architectural approach will appear here.</p>
+
+          <div class="service-specs-grid">
+            <div class="spec-block">
+              <span class="spec-label">Materials &amp; Hardware</span>
+              <span class="spec-val" id="modal-service-materials">Bespoke German Fittings, Marine Ply, Quartz</span>
+            </div>
+            <div class="spec-block">
+              <span class="spec-label">Execution Timeline</span>
+              <span class="spec-val" id="modal-service-timeline">3 to 5 Weeks</span>
+            </div>
+            <div class="spec-block">
+              <span class="spec-label">Warranty</span>
+              <span class="spec-val" id="modal-service-warranty">10-Year Comprehensive Warranty</span>
+            </div>
+            <div class="spec-block">
+              <span class="spec-label">Design Process</span>
+              <span class="spec-val" id="modal-service-process">3D Render &bull; Factory Finish &bull; Precision Install</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-modal-footer">
+          <button class="service-inquire-btn" id="modal-inquire-trigger">Book Consultation for This Service &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Call to Action Banner ================= -->
+    <section class="services-cta-section">
+      <div class="services-cta-container">
+        <div class="services-cta-glass-card">
+          <div class="services-cta-content">
+            <span class="services-cta-badge">Ready To Build Your Dream Space?</span>
+            <h2 class="services-cta-heading">Let's Craft an End-to-End Interior Masterpiece Together</h2>
+            <p class="services-cta-sub">Talk directly with our principal architects and interior specialists for a personalized on-site consultation and 3D architectural plan.</p>
+          </div>
+          <button class="inquiry-btn trigger-inquiry" style="padding: 0.85rem 2rem; font-size: 0.85rem; letter-spacing: 0.12em;">BOOK FREE DESIGN CONSULTATION</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Site Footer ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span class="footer-copy">Copyright &copy; 2024 White Triad Architects &bull; Thought Parallels. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#top">Top</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client Inquiry Modal -->
+  <div class="modal-overlay" id="inquiry-modal" role="dialog" aria-modal="true" aria-label="Send Inquiry Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <h3 class="modal-title">Studio Consultation Inquiry</h3>
+        <p class="modal-subtitle">Share your architectural or interior design vision with us.</p>
+      </div>
+
+      <form class="modal-form" id="inquiry-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" class="form-input" placeholder="e.g. Nikhil Patel" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-input" placeholder="name@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone / WhatsApp</label>
+          <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+        <div class="form-group">
+          <label for="project-type" class="form-label">Service / Project Type</label>
+          <input type="text" id="project-type" class="form-input" placeholder="e.g. Modular Kitchen / Complete Home Interior">
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Project Overview</label>
+          <textarea id="message" class="form-textarea" placeholder="Tell us about your home floor plan, timeline, and requirements..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit Interior Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
