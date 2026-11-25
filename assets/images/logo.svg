@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" fill="none">
+  <style>
+    .mark { stroke: #111111; }
+    .main-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 42px; font-weight: 800; letter-spacing: 0.22em; fill: #111111; }
+    .sub-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 500; letter-spacing: 0.26em; fill: #b5ab76; }
+    .divider { stroke: #999999; stroke-width: 1.5; }
+  </style>
+  <g transform="translate(5, 10) scale(0.39)">
+    <polyline class="mark" points="270,202 158,25 25,359 154,470 232,446" stroke-width="22" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  </g>
+  <text x="130" y="92" class="main-text">white triad</text>
+  <line x1="130" y1="115" x2="665" y2="115" class="divider" />
+  <text x="135" y="162" class="sub-text">architect's</text>
+</svg>

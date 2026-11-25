@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryItems = [
     {
       id: 'hero',
-      title: 'Studio Thought Parallels — Spatial Harmony',
+      title: 'White Triad Architects — Spatial Harmony',
       desc: 'Double-height volume and natural teak wood staircase integrated with floor-to-ceiling garden glazing.',
       src1x: 'assets/images/hero-ai-2x.webp',
       src2x: 'assets/images/hero-ai-4k.webp',
-      alt: 'Thought Parallels Architectural Interior in 4K'
+      alt: 'White Triad Architects Interior in 4K'
     },
     {
       id: 'project-1',
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'Chevayur, Calicut — Exposed brickwork, sweeping cantilevered concrete entry, lush bougainvillea, and vertical teak wood portal.',
       src1x: 'assets/images/project-1-2x.webp',
       src2x: 'assets/images/project-1-4k.webp',
-      alt: 'Ananda Residence - Thought Parallels'
+      alt: 'Ananda Residence - White Triad Architects'
     },
     {
       id: 'project-2',
@@ -50,15 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'Malappuram, Kerala — 12,000 sq.ft. modern tropical estate featuring traditional Mangalore roof slopes and hand-cut cobblestone courtyard.',
       src1x: 'assets/images/project-2-2x.webp',
       src2x: 'assets/images/project-2-4k.webp',
-      alt: 'The Skew House - Thought Parallels'
+      alt: 'The Skew House - White Triad Architects'
     },
     {
       id: 'contact-studio',
-      title: 'Thought Parallels & White Triad Design Studio',
-      desc: 'Calicut & Coimbatore — Contemporary collaborative architectural workspace and client consultation lounge.',
+      title: 'White Triad Architects Design Studio',
+      desc: 'PN pudur, Coimbatore — Contemporary collaborative architectural workspace and client consultation lounge.',
       src1x: 'assets/images/contact-studio-lounge.webp',
       src2x: 'assets/images/contact-studio-lounge.jpg',
-      alt: 'Architectural Studio and Consultation Lounge'
+      alt: 'White Triad Architectural Studio and Consultation Lounge'
     }
   ];
 
@@ -135,14 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Dynamic card in portfolio grid
         const img = trigger.querySelector('img');
         const titleEl = trigger.querySelector('.portfolio-card-title') || trigger.querySelector('h3');
-        const title = titleEl ? titleEl.textContent.trim() : 'Thought Parallels Project';
+        const title = titleEl ? titleEl.textContent.trim() : 'White Triad Architects Project';
         const src = img ? img.currentSrc || img.src : '';
 
         lightboxImg.src = src;
         lightboxImg.srcset = '';
         lightboxImg.alt = title;
         lightboxTitle.textContent = title;
-        lightboxDesc.textContent = 'Thought Parallels Architecture & Design Practice';
+        lightboxDesc.textContent = 'White Triad Architects • Coimbatore, Tamil Nadu';
 
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
 
       setTimeout(() => {
-        showToast('Thank you! Your message has been sent to Thought Parallels.');
+        showToast('Thank you! Your message has been sent to White Triad Architects.');
         contactPageForm.reset();
         submitBtn.innerHTML = '<span>Submitted &check;</span>';
         setTimeout(() => {

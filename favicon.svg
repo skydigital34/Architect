@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="4" fill="#111111"/>
-  <path d="M8 10h16v2H8zm0 5h16v2H8zm0 5h16v2H8z" fill="#ffffff"/>
-  <circle cx="24" cy="7" r="1.5" fill="#c49b63"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <style>
+    .mark { stroke: #111111; }
+    @media (prefers-color-scheme: dark) {
+      .mark { stroke: #ffffff; }
+    }
+  </style>
+  <g transform="translate(100, 20) scale(0.92)">
+    <polyline class="mark" points="270,202 158,25 25,359 154,470 232,446" stroke-width="22" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  </g>
 </svg>
