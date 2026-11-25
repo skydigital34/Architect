@@ -21,7 +21,7 @@
   --color-darker: #171717;
   
   --max-width-content: 1120px;
-  --header-height: 64px;
+  --header-height: 80px;
   --radius-sm: 4px;
   --radius-md: 8px;
   
@@ -137,8 +137,8 @@ img, picture {
 }
 
 .site-brand-logo-img {
-  height: 48px;
-  max-width: 220px;
+  height: 64px;
+  max-width: 260px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -645,6 +645,186 @@ img, picture {
 }
 
 /* ==========================================================================
+   Staggered Entrance Animations (Header & Hero Section)
+   Each element animates in individually from the outside with refined timing
+   ========================================================================== */
+
+@keyframes animFadeSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animFadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animFadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animHeroZoom {
+  from {
+    opacity: 0.3;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes animPanelSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 1. Header Logo Entrance */
+.site-logo.brand-logo-wrap {
+  animation: animFadeSlideLeft 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.12s backwards;
+}
+
+/* 2. Desktop Navigation Waterfall Cascade */
+.desktop-nav .nav-link:nth-of-type(1) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.20s backwards;
+}
+.desktop-nav .nav-divider:nth-of-type(1) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.26s backwards;
+}
+.desktop-nav .nav-link:nth-of-type(2) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.32s backwards;
+}
+.desktop-nav .nav-divider:nth-of-type(2) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.38s backwards;
+}
+.desktop-nav .nav-link:nth-of-type(3) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.44s backwards;
+}
+.desktop-nav .nav-divider:nth-of-type(3) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.50s backwards;
+}
+.desktop-nav .nav-link:nth-of-type(4) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.56s backwards;
+}
+.desktop-nav .nav-divider:nth-of-type(4) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.62s backwards;
+}
+.desktop-nav .nav-link:nth-of-type(5) {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.68s backwards;
+}
+
+.mobile-toggle {
+  animation: animFadeSlideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.25s backwards;
+}
+
+/* 3. Hero Background Image Soft Reveal */
+.hero-img {
+  animation: animHeroZoom 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s backwards;
+}
+
+/* 4. Hero Glassmorphic Ambient Panel */
+.hero-curated-panel {
+  animation: animPanelSlide 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.20s backwards;
+}
+
+/* 5. Hero Eyebrow Pill Badge */
+.hero-curated-badge {
+  animation: animFadeSlideDown 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.35s backwards;
+}
+
+/* 6. Hero Title Elements */
+.hero-curated-title .title-serif {
+  display: block;
+  animation: animFadeSlideLeft 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.50s backwards;
+}
+
+.hero-curated-title .title-sans {
+  display: block;
+  animation: animFadeSlideLeft 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.65s backwards;
+}
+
+/* 7. Hero Tagline */
+.hero-curated-tagline {
+  animation: animFadeSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.80s backwards;
+}
+
+/* 8. Hero 3 Pillar Feature Cards (One by One) */
+.hero-pillar-cards-wrap .hero-pillar-glass-card:nth-child(1) {
+  animation: animFadeSlideUp 0.80s cubic-bezier(0.16, 1, 0.3, 1) 0.95s backwards;
+}
+.hero-pillar-cards-wrap .hero-pillar-glass-card:nth-child(2) {
+  animation: animFadeSlideUp 0.80s cubic-bezier(0.16, 1, 0.3, 1) 1.10s backwards;
+}
+.hero-pillar-cards-wrap .hero-pillar-glass-card:nth-child(3) {
+  animation: animFadeSlideUp 0.80s cubic-bezier(0.16, 1, 0.3, 1) 1.25s backwards;
+}
+
+/* 9. Hero Bottom Row (Action Button & Slogan) */
+.hero-curated-bottom {
+  animation: animFadeSlideUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 1.40s backwards;
+}
+
+/* 10. Hero Right Scroll Indicator */
+.hero-scroll-indicator {
+  animation: animFadeSlideUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 1.55s backwards;
+}
+
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  .site-logo.brand-logo-wrap,
+  .desktop-nav .nav-link,
+  .desktop-nav .nav-divider,
+  .mobile-toggle,
+  .hero-img,
+  .hero-curated-panel,
+  .hero-curated-badge,
+  .hero-curated-title .title-serif,
+  .hero-curated-title .title-sans,
+  .hero-curated-tagline,
+  .hero-pillar-cards-wrap .hero-pillar-glass-card,
+  .hero-curated-bottom,
+  .hero-scroll-indicator,
+  .about-image-card,
+  .about-image-glass-badge,
+  .about-glass-card,
+  .about-eyebrow,
+  .about-title,
+  .about-tagline,
+  .about-narrative p,
+  .about-statement-glass {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
    Projects Section
    ========================================================================== */
 .projects-section {
@@ -939,9 +1119,10 @@ img, picture {
 .site-footer {
   background: var(--color-dark);
   color: #a1a1aa;
-  padding: 1.5rem 0;
+  padding: 2.2rem 0 1.8rem;
   font-size: 0.68rem;
   letter-spacing: 0.04em;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer-container {
@@ -952,7 +1133,49 @@ img, picture {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1.5rem;
+}
+
+.footer-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-brand-logo-img {
+  height: 62px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  display: block;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer-logo-link:hover .footer-brand-logo-img {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+.footer-tagline {
+  font-size: 0.72rem;
+  color: #71717a;
+  padding-left: 1.25rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.footer-meta-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
 }
 
 .footer-copy {
@@ -966,6 +1189,34 @@ img, picture {
 
 .footer-links a:hover {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 70px;
+  }
+  .site-brand-logo-img {
+    height: 52px;
+  }
+  .footer-brand-logo-img {
+    height: 52px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .footer-meta-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .footer-tagline {
+    padding-left: 0;
+    border-left: none;
+    display: block;
+    margin-top: 0.25rem;
+  }
 }
 
 /* ==========================================================================
@@ -1514,11 +1765,21 @@ img, picture {
   box-shadow: 
     0 20px 45px -12px rgba(0, 0, 0, 0.09),
     0 0 1px 1px rgba(255, 255, 255, 0.9) inset;
-  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+  opacity: 0;
+  transform: translateX(-55px) scale(0.97);
+  transition: 
+    opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow var(--transition-slow);
+}
+
+.about-section.in-view .about-image-card {
+  opacity: 1;
+  transform: translateX(0) scale(1);
 }
 
 .about-image-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.005);
   box-shadow: 
     0 24px 50px -10px rgba(0, 0, 0, 0.12),
     0 0 1px 1px rgba(255, 255, 255, 1) inset;
@@ -1527,7 +1788,7 @@ img, picture {
 .about-portrait-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1024 / 770;
+  aspect-ratio: 1024 / 764;
   object-fit: cover;
   display: block;
   transition: transform var(--transition-slow);
@@ -1556,6 +1817,14 @@ img, picture {
   display: flex;
   align-items: center;
   gap: 0.45rem;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s;
+}
+
+.about-section.in-view .about-image-glass-badge {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .badge-dot {
@@ -1577,6 +1846,14 @@ img, picture {
     0 16px 40px -10px rgba(0, 0, 0, 0.04),
     0 0 1px 1px rgba(255, 255, 255, 0.9) inset;
   position: relative;
+  opacity: 0;
+  transform: translateX(55px);
+  transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s, transform 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+}
+
+.about-section.in-view .about-glass-card {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-eyebrow {
@@ -1587,6 +1864,14 @@ img, picture {
   color: var(--color-accent);
   margin-bottom: 0.5rem;
   display: inline-block;
+  opacity: 0;
+  transform: translateY(-14px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.30s, transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.30s;
+}
+
+.about-section.in-view .about-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-title {
@@ -1596,6 +1881,14 @@ img, picture {
   text-transform: uppercase;
   color: #111111;
   margin-bottom: 0.35rem;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.42s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.42s;
+}
+
+.about-section.in-view .about-title {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-tagline {
@@ -1607,6 +1900,14 @@ img, picture {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.54s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.54s;
+}
+
+.about-section.in-view .about-tagline {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-narrative {
@@ -1621,6 +1922,33 @@ img, picture {
 
 .about-narrative p {
   letter-spacing: 0.01em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-section.in-view .about-narrative p:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.65s;
+}
+
+.about-section.in-view .about-narrative p:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.77s;
+}
+
+.about-section.in-view .about-narrative p:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.89s;
+}
+
+.about-section.in-view .about-narrative p:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.01s;
 }
 
 .about-statement-glass {
@@ -1629,6 +1957,14 @@ img, picture {
   border-left: 2px solid #111111;
   padding: 1rem 1.25rem;
   border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1) 1.12s, transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) 1.12s;
+}
+
+.about-section.in-view .about-statement-glass {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .about-statement-glass p {
@@ -1732,7 +2068,7 @@ img, picture {
   padding: 6.5rem 1.5rem 3rem;
   text-align: center;
   background: 
-    radial-gradient(circle at 50% 15%, rgba(217, 119, 54, 0.08) 0%, rgba(250, 249, 246, 0.5) 60%),
+    radial-gradient(circle at 50% 15%, rgba(140, 88, 53, 0.07) 0%, rgba(250, 249, 246, 0.5) 60%),
     #faf9f6;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -1744,7 +2080,7 @@ img, picture {
   transform: translateX(-50%);
   width: 60%;
   height: 250px;
-  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(140, 88, 53, 0.1) 0%, transparent 70%);
   filter: blur(50px);
   pointer-events: none;
 }
@@ -1761,7 +2097,7 @@ img, picture {
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #d97736;
+  color: #8c5835;
   margin-bottom: 0.75rem;
   display: block;
 }
@@ -1818,7 +2154,7 @@ img, picture {
 
 .service-filter-btn:hover {
   background: #ffffff;
-  border-color: rgba(217, 119, 54, 0.4);
+  border-color: rgba(140, 88, 53, 0.4);
   color: #111111;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -1882,15 +2218,15 @@ img, picture {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent, rgba(217, 119, 54, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(140, 88, 53, 0.6), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(217, 119, 54, 0.45);
-  box-shadow: 0 18px 40px -10px rgba(217, 119, 54, 0.12), 0 0 1px 1px #ffffff inset;
+  border-color: rgba(140, 88, 53, 0.45);
+  box-shadow: 0 18px 40px -10px rgba(140, 88, 53, 0.12), 0 0 1px 1px #ffffff inset;
 }
 
 .service-card:hover .service-card-glow {
@@ -1905,12 +2241,12 @@ img, picture {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: rgba(217, 119, 54, 0.06);
+  background: rgba(140, 88, 53, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
-  color: #d97736;
+  color: #8c5835;
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
@@ -1921,8 +2257,8 @@ img, picture {
 
 .service-card:hover .service-icon-wrap {
   transform: scale(1.08);
-  background: rgba(217, 119, 54, 0.12);
-  color: #b85d1e;
+  background: rgba(140, 88, 53, 0.15);
+  color: #6f4223;
 }
 
 .service-card-title {
@@ -1963,7 +2299,7 @@ img, picture {
   border: none;
   font-size: 0.72rem;
   font-weight: 600;
-  color: #d97736;
+  color: #8c5835;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -1974,7 +2310,7 @@ img, picture {
 
 .service-explore-btn:hover {
   gap: 0.5rem;
-  color: #b85d1e;
+  color: #6f4223;
 }
 
 /* Service Detail Modal */
@@ -2057,8 +2393,8 @@ img, picture {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: rgba(217, 119, 54, 0.1);
-  color: #d97736;
+  background: rgba(140, 88, 53, 0.1);
+  color: #8c5835;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2075,7 +2411,7 @@ img, picture {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #d97736;
+  color: #8c5835;
   display: block;
   margin-bottom: 0.25rem;
 }
@@ -2142,7 +2478,7 @@ img, picture {
 }
 
 .service-inquire-btn:hover {
-  background: #d97736;
+  background: #8c5835;
   transform: translateY(-2px);
 }
 
@@ -2156,7 +2492,7 @@ img, picture {
 .services-cta-glass-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 244, 238, 0.9) 100%);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(217, 119, 54, 0.25);
+  border: 1px solid rgba(140, 88, 53, 0.25);
   border-radius: var(--radius-md);
   padding: 3rem 3.5rem;
   display: flex;
@@ -2171,7 +2507,7 @@ img, picture {
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #d97736;
+  color: #8c5835;
   margin-bottom: 0.45rem;
   display: block;
 }
@@ -2493,8 +2829,8 @@ img, picture {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #d97736;
-  box-shadow: 0 0 0 4px rgba(217, 119, 54, 0.2);
+  background: #8c5835;
+  box-shadow: 0 0 0 4px rgba(140, 88, 53, 0.2);
   flex-shrink: 0;
 }
 
@@ -2521,17 +2857,17 @@ img, picture {
   margin-left: auto;
   font-size: 0.74rem;
   font-weight: 600;
-  color: #d97736;
+  color: #8c5835;
   text-decoration: none;
   white-space: nowrap;
   padding: 0.35rem 0.65rem;
   border-radius: 3px;
-  background: rgba(217, 119, 54, 0.08);
+  background: rgba(140, 88, 53, 0.08);
   transition: background 0.2s, color 0.2s;
 }
 
 .chip-dir-btn:hover {
-  background: #d97736;
+  background: #8c5835;
   color: #ffffff;
 }
 

@@ -605,4 +605,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // 7. Scroll-Triggered Entrance Reveal for About Section
+  const aboutSection = document.getElementById('about');
+  if (aboutSection) {
+    if ('IntersectionObserver' in window) {
+      const aboutObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            aboutSection.classList.add('in-view');
+            aboutObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+      aboutObserver.observe(aboutSection);
+    } else {
+      aboutSection.classList.add('in-view');
+    }
+
+    // Safety fallback: Reveal if already in viewport on page load or direct anchor jump
+    setTimeout(() => {
+      if (aboutSection && !aboutSection.classList.contains('in-view')) {
+        const rect = aboutSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.85) {
+          aboutSection.classList.add('in-view');
+        }
+      }
+    }, 250);
+  }
 });
